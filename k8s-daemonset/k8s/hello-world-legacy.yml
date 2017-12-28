@@ -50,7 +50,7 @@ metadata:
 spec:
   selector:
     app: hello
-  clusterIP: None
+  type: NodePort
   ports:
   - name: http
     port: 7777
@@ -92,7 +92,7 @@ metadata:
 spec:
   selector:
     app: world-v1
-  clusterIP: None
+  type: NodePort
   ports:
   - name: http
     port: 7778

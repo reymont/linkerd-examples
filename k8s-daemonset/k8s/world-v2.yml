@@ -36,7 +36,7 @@ metadata:
 spec:
   selector:
     app: world-v2
-  clusterIP: None
+  type: NodePort
   ports:
   - name: http
     port: 7778

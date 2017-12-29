@@ -58,15 +58,15 @@ spec:
 apiVersion: v1
 kind: ReplicationController
 metadata:
-  name: world-v1
+  name: world-v2
 spec:
   replicas: 3
   selector:
-    app: world-v1
+    app: world-v2
   template:
     metadata:
       labels:
-        app: world-v1
+        app: world-v2
     spec:
       dnsPolicy: ClusterFirst
       containers:
@@ -78,7 +78,7 @@ spec:
             fieldRef:
               fieldPath: status.podIP
         - name: TARGET_WORLD
-          value: world
+          value: hal, open the pod bay doors
         args:
         - "-addr=:7778"
         ports:
@@ -88,10 +88,10 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: world-v1
+  name: world-v2
 spec:
   selector:
-    app: world-v1
+    app: world-v2
   type: NodePort
   ports:
   - name: http

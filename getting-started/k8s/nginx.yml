@@ -28,7 +28,7 @@ metadata:
 spec:
   selector:
     app: nginx
-  clusterIP: None
+  type: NodePort
   ports:
   - name: service
     port: 80

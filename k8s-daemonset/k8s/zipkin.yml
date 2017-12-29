@@ -47,7 +47,7 @@ metadata:
     name: zipkin
   name: zipkin
 spec:
-  type: LoadBalancer
+  type: NodePort
   selector:
     app: zipkin
   ports:

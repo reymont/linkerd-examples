@@ -129,7 +129,7 @@ metadata:
 spec:
   selector:
     app: l5d
-  type: LoadBalancer
+  type: NodePort
   ports:
   - name: outgoing
     port: 4140

@@ -78,7 +78,7 @@ metadata:
 spec:
   selector:
     app: linkerd
-  type: LoadBalancer
+  type: NodePort
   ports:
   - name: incoming
     port: 4140

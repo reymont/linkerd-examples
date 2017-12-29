@@ -115,7 +115,7 @@ metadata:
 spec:
   selector:
     app: l5d
-  type: LoadBalancer
+  type: NodePort
   ports:
   - name: external
     port: 80

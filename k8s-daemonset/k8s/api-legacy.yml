@@ -50,7 +50,7 @@ metadata:
 spec:
   selector:
     app: api
-  clusterIP: None
+  type: NodePort
   ports:
   - name: http
     port: 7779
